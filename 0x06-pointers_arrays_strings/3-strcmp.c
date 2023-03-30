@@ -22,12 +22,12 @@ int _strcmp(char *s1, char *s2)
 		}
 		else if (s1[i] == '\0')
 		{
-			diff = s1[i];
+			diff = 15;
 			break;
 		}
 		else if (s2[i] == '\0')
 		{
-			diff = -s2[i];
+			diff = -15;
 			break;
 		}
 		else
