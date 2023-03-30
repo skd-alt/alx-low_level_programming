@@ -10,7 +10,7 @@
  * returns positive number if s1 > s2
  */
 
-int _strcap(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int 1 = 0, diff = 0;
 
@@ -23,7 +23,7 @@ int _strcap(char *s1, char *s2)
 			diff = s2[i];
 			break;
 		}
-		else if (s1[i] == '\0')
+		else if (s2[i] == '\0')
 		{
 			diff = s1[i];
 			break;
