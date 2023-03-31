@@ -8,7 +8,8 @@
 void print_number(int n)
 {
 	unsigned int n1;
-	int *num, j, i;
+	int num[9]; 
+	int j, i, k;
 
 	n1 = n;
 	if (n < 0)
