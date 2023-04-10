@@ -19,9 +19,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	for (index = 1; index < argc; index++)
+	for (i = 1; i < argc; i++)
 	{
-		multi *= atoi(argv[index]);
+		multi *= atoi(argv[i]);
 	}
 	printf("%d\n", multi);
 	return (0);
