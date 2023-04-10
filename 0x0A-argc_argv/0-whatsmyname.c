@@ -3,7 +3,7 @@
 /**
  * main - Prints name of program
  * @argc: size of arg vector
- * @agrv: arguement vector
+ * @argv: arguement vector
  *
  * Return: Always 0 success
  */
