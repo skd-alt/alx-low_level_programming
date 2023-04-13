@@ -5,7 +5,7 @@
  * @min: minimum value.
  * @max: maximum value.
  *
- * Return; pointer to a newly created array.
+ * Return: pointer to a newly created array.
  * NULL if malloc fails.
  * NULL if min > max.
  */
