@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * init_dog - initializes an object of type struct dog.
  * @d: The dog to be initialized
