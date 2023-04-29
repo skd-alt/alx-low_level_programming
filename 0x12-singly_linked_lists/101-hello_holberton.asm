@@ -1,16 +1,10 @@
 section .text
 	global main
+	extern printf
 main:
-	mov edx, len
-	mov ecx, msg
-	mov ebx, 1
-	mov eax, 4	;sytem write call
-	int 0x80	;call kernel
+	mov edi, fmt
+	mov eax, 0	;vars 0
+	call printf
+	ret
 
-	mov eax, 1	;sytem exit
-	int 0x80
-
-section .data
-	msg db "Hello, Holberton",0xa ;you can also use 10
-	len equ $ -msg
-	
+fmt: db "Hello, Holberton", 10, 0
