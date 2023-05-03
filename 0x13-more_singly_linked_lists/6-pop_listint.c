@@ -17,6 +17,13 @@ int pop_listint(listint_t **head)
 	if (head == NULL || *head == NULL)
 		return (0);
 
+	if ((*head)->next == NULL)
+	{
+		free(*head);
+		*head = NULL;
+		return (num);
+	}
+
 	tmp_node = (*head)->next;
 	free(*head);
 	*head = tmp_node;
