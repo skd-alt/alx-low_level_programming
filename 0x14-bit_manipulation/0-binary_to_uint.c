@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 			count--;
 		}
 
-		num += (b[i] - 48) * multi;
+		num += (b[i] - '0') * multi;
 		i++;
 		multi = 1;
 	}
