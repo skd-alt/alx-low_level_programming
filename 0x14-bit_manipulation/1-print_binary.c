@@ -16,14 +16,14 @@ void print_binary(unsigned long int n)
 
 		if (tmp & 1)
 		{
-			_putchar(1);
+			_putchar('1');
 			count++;
 		}
 
 		else if (count)
-			_putchar (0);
+			_putchar ('0');
 	}
 
 	if (!count)
-		_putchar (0);
+		_putchar ('0');
 }
