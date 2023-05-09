@@ -1,6 +1,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 
 /**
  * append_text_to_file - append text to an existing file
