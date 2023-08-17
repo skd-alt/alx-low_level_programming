@@ -4,7 +4,7 @@
  * insert_dnodeint_at_index - insert element at nth node
  * @h: double pointer to head
  * @idx: nth element
- * @n: int dat to be added 
+ * @n: int dat to be added
  *
  * Return: new element or Null
  */
@@ -29,7 +29,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new_node;
 		return (new_node);
 	}
-	
+
 	temp = *h;
 
 	while (temp)
@@ -48,5 +48,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		num++;
 	}
 
-	return NULL;
+	return (NULL);
 }
