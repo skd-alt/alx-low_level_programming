@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool check_input(void);
+bool check_result(void);
 
 /**
  * check_input - checks input
