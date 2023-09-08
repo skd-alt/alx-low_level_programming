@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * add_hash_node - adds a node at the beginning of hash index
+ * add_h_node - adds a node at the beginning of hash index
  * @h: head of list
  * @key: key
  * @value: value to be inputted
@@ -12,6 +12,19 @@
 hash_node_t *add_h_node(hash_node_t **h, const char *key, const char *value)
 {
 	hash_node_t *temp;
+
+	temp = *h;
+
+	while (temp != NULL)
+	{
+		if (strcmp(key, temp->key) == 0)
+		{
+			free(temp->value);
+			temp->value = strdup(value);
+			return (*h);
+		}
+		temp = temp->next;
+	}
 
 	temp = malloc(sizeof(hash_node_t));
 	if (temp == NULL)
